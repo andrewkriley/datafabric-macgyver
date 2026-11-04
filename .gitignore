@@ -1,0 +1,11 @@
+# Local secrets — never commit
+.env
+.env.*
+!.env.example
+
+# AWS / SSH key material from Lab 3b
+*.pem
+*.ppk
+
+# Ad-hoc downloads from a live lab run
+/lab-downloads/
