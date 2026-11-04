@@ -313,10 +313,14 @@ When SHOW instructions arrive, fill `.env` and confirm:
 
 ---
 
-## 7. Still waiting
+## 7. Status after Workshop Studio join (4 Nov 2026)
 
-1. SHOW instruction pack: three URLs, usernames, AWS STS creds, HEC token, any stack-specific bucket/role suffixes.
-2. Confirmation that generators are already writing to the four indexes in §3.
-3. Optional: SHOW owner confirmation whether Lab 5’s “100 minutes” is real.
+This live event is **FS-S3 Immersion Day**, not the full MacGyver Labs 1–6. Running log: `RILES_LAB_NOTES.md`.
 
-No live lab clicks until `.env` is populated. This review is the runbook for that session.
+Done: join via Email OTP (`andreril@cisco.com`), AWS STS in local `.env`, account `565174714811` / `us-east-1` inventoried.
+
+Still waiting:
+
+1. Login with the existing Splunk account. Studio does not print a stack URL — check Instances and Product Logins → Splunk Cloud Services.
+2. `SPLUNK_CLOUD_URL` / `SCS_TENANCY_URL` after that login.
+3. Do not start MacGyver Labs 1, 2, 4, 5, 6 on this stack unless later lessons say so.
