@@ -3,7 +3,10 @@
 Shortcuts and fixes discovered while joining and running the live event.
 **No secrets in this file.** Credentials live in local `.env` only.
 
-Last updated: 4 Nov 2026, 2:00 PM Australia/Sydney.
+Last updated: 4 Nov 2026, 2:47 PM Australia/Sydney.
+
+**Portable pack for another worker:** [`WORKER_HANDOFF.md`](WORKER_HANDOFF.md)
+(raw: https://raw.githubusercontent.com/andrewkriley/datafabric-macgyver/riles_lab_test/WORKER_HANDOFF.md)
 
 ---
 
