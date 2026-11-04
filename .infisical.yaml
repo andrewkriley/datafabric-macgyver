@@ -1,0 +1,9 @@
+# Placeholder Infisical project link. Safe to commit — no secret values.
+# Replace project-id after `infisical login` + `infisical init` (or paste the ID).
+# Docs: https://infisical.com/docs/cli/project-config
+version: 1
+general: {}
+secrets-management:
+  project-id: REPLACE_WITH_INFISICAL_PROJECT_ID
+  environment: dev
+  secret-path: /datafabric-macgyver
