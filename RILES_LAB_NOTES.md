@@ -3,7 +3,7 @@
 Shortcuts and fixes discovered while joining and running the live event.
 **No secrets in this file.** Credentials live in local `.env` only.
 
-Last updated: 4 Nov 2026, 1:20 PM Australia/Sydney.
+Last updated: 4 Nov 2026, 2:00 PM Australia/Sydney.
 
 ---
 
@@ -123,14 +123,34 @@ Next time: log in with the existing Splunk account, then check **Instances** and
 | J8 | `.env` values with spaces break `source` | Quote `WORKSHOP_EVENT_NAME` and `WORKSHOP_CONTENT_TITLE` |
 | J9 | Open AWS console from Studio | Right-click → new tab; console is already signed in as Participant |
 | J10 | Lesson 1 Glue table already exists | Skip any “create the CloudFront Glue table” if the studio copy implies it is missing |
+| J11 | Workshop keys are **not** in Infisical yet | Placeholder only: `.infisical.yaml` + `.env.example`. Need project ID / `infisical login` to create the folder |
+
+---
+
+## Infisical (4 Nov 2026)
+
+Checked this repo, this VM, and process env. **None of the workshop variables are in Infisical from here.**
+
+| Check | Result |
+|---|---|
+| `.infisical.yaml` / `.infisical.json` in repo | Missing (placeholder added) |
+| `infisical` CLI | Not installed |
+| `INFISICAL_*` process env | Empty |
+| Token / project ID | Not available — cannot list or create live secrets |
+
+Placeholder now in git (no values):
+
+- `.infisical.yaml` → env `dev`, path `/datafabric-macgyver`, `project-id: REPLACE_WITH_INFISICAL_PROJECT_ID`
+- `.env.example` → same key names we would create in that folder
+
+To actually provision: send the Infisical org/project ID (or run `infisical login` + `infisical init` on this VM), then we can `secrets set --file=./.env` from the gitignored local file.
 
 ---
 
 ## Still open
 
-1. Splunk login with the existing account (username not in `.env` yet).
-2. Discover SPLUNK_CLOUD_URL / SCS_TENANCY_URL from Instances or product logins.
-3. Confirm AWS account id, pre-created buckets, Glue DB, IAM role from the workshop account.
-4. Read studio **Workshop Architecture** and Lesson 1 before clicking AWS resources.
+1. Infisical project ID / login so placeholders can become real secrets.
+2. Splunk login with the existing account (username not in `.env` yet).
+3. Discover SPLUNK_CLOUD_URL / SCS_TENANCY_URL from Instances or product logins.
 
 When those land, add a dated section below rather than rewriting the join shortcut.
